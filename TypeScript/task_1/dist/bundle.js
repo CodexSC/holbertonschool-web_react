@@ -1,1 +1,1 @@
-(()=>{"use strict";console.log({firstName:"John",fullTimeEmployee:!1,lastName:"Doe",location:"London",contract:!1}),console.log({firstName:"John",lastName:"Doe",location:"London",fullTimeEmployee:!0,numberOfReports:17})})();
+(()=>{"use strict";console.log("".concat("John".charAt(0),". ").concat("Doe")),console.log({firstName:"John",fullTimeEmployee:!1,lastName:"Doe",location:"London",contract:!1}),console.log({firstName:"John",lastName:"Doe",location:"London",fullTimeEmployee:!0,numberOfReports:17})})();
