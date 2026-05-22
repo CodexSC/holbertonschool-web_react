@@ -10,6 +10,7 @@ const printTeacher: printTeacherFunction = (firstName, lastName) => {
 
 // Example usage
 console.log(printTeacher("John", "Doe"));
+
 // Teacher interface definition
 interface Teacher {
   readonly firstName: string;
@@ -44,3 +45,38 @@ const director1: Directors = {
 };
 
 console.log(director1);
+
+// Interface describing the StudentClass constructor
+interface StudentConstructor {
+  new (firstName: string, lastName: string): StudentClassInterface;
+}
+
+// Interface describing the StudentClass instance methods
+interface StudentClassInterface {
+  workOnHomework(): string;
+  displayName(): string;
+}
+
+// StudentClass implementation
+class StudentClass implements StudentClassInterface {
+  firstName: string;
+  lastName: string;
+
+  constructor(firstName: string, lastName: string) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+
+  workOnHomework(): string {
+    return 'Currently working';
+  }
+
+  displayName(): string {
+    return this.firstName;
+  }
+}
+
+// Example usage
+const student = new StudentClass('Alice', 'Smith');
+console.log(student.displayName());
+console.log(student.workOnHomework());
