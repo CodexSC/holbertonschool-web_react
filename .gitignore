@@ -1,0 +1,4 @@
+# Ignore node_modules and build output
+TypeScript/task_0/node_modules/
+TypeScript/task_0/dist/
+TypeScript/task_0/package-lock.json
